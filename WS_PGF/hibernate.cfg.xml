@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/PGF</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <mapping class="ixpan.pgf.model.Telefono" />
+        <mapping class="ixpan.pgf.model.Interno" />
+        <mapping class="ixpan.pgf.model.RInternosObra" />
+        <mapping class="ixpan.pgf.model.CTipoContratista" />
+        <mapping class="ixpan.pgf.model.Contratista" />
+        <mapping class="ixpan.pgf.model.ItemRegistrado" />
+        <mapping class="ixpan.pgf.model.CStatusPresupuesto" />
+        <mapping class="ixpan.pgf.model.ItemAutorizados" />
+        <mapping class="ixpan.pgf.model.CTipoPago" />
+        <mapping class="ixpan.pgf.model.RContratistaObra" />
+        <mapping class="ixpan.pgf.model.CajaChica" />
+        <mapping class="ixpan.pgf.model.RUsuarioActividad" />
+        <mapping class="ixpan.pgf.model.Obra" />
+        <mapping class="ixpan.pgf.model.CTipoDireccion" />
+        <mapping class="ixpan.pgf.model.CuentaBancaria" />
+        <mapping class="ixpan.pgf.model.SolicitudPagoChange" />
+        <mapping class="ixpan.pgf.model.Direccion" />
+        <mapping class="ixpan.pgf.model.CStastusSolicitudPago" />
+        <mapping class="ixpan.pgf.model.Usuario" />
+        <mapping class="ixpan.pgf.model.PresupuestoStatusChange" />
+        <mapping class="ixpan.pgf.model.Pago" />
+        <mapping class="ixpan.pgf.model.ItemsPresupuesto" />
+        <mapping class="ixpan.pgf.model.CTipoComprobante" />
+        <mapping class="ixpan.pgf.model.Presupuesto" />
+        <mapping class="ixpan.pgf.model.Banco" />
+        <mapping class="ixpan.pgf.model.CRolUsuario" />
+        <mapping class="ixpan.pgf.model.Cliente" />
+        <mapping class="ixpan.pgf.model.SolicitudPago" />
+        <mapping class="ixpan.pgf.model.CRolObra" />
+        <mapping class="ixpan.pgf.model.CActividad" />
+        <mapping class="ixpan.pgf.model.CTipoPresupuesto" />
+        <mapping class="ixpan.pgf.model.CItemCaja" />
+    </session-factory>
+</hibernate-configuration>
